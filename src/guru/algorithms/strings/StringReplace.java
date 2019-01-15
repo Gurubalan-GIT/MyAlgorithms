@@ -1,3 +1,5 @@
+package guru.algorithms.strings;
+
 import java.util.Scanner;
 
 public class StringReplace {
