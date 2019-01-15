@@ -6,7 +6,7 @@ public class LinkedList {
     public void add(int data){
         Node node=new Node(data);
         node.next=null;
-
+        //Checking if the head is null, if it is node we have to traverse till the last node (until null) and then add it.
         if(head==null){
             head=node;
         }
@@ -22,7 +22,7 @@ public class LinkedList {
     public void show(){
         Node currentNode=head;
         while(currentNode!=null){
-            System.out.print("-->"+currentNode.data);
+            System.out.print("-->"+currentNode.getData());
             currentNode=currentNode.next;
         }
     }
