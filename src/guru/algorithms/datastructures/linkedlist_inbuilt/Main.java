@@ -16,13 +16,24 @@ public class Main {
         }
         Iterator<Integer> integerIterator = linkedList.iterator();
         Iterator<Integer> integerIterator1 = linkedList.iterator();
+        System.out.println("Printing Linked List - First add.");
         while(integerIterator.hasNext()){
             if(integerIterator1.next()==(linkedList.getLast())){
-                System.out.print(integerIterator.next());
+                System.out.println(integerIterator.next());
                 break;
             }else {
                 System.out.print(integerIterator.next()+"->");
             }
+        }
+        //Reversal of a Linked list with the help of descendingIterator!
+        Iterator iterator = linkedList.descendingIterator();
+        Iterator iterator1 = linkedList.descendingIterator();
+        while(iterator.hasNext()){
+            if(iterator1.next()==linkedList.getFirst()){
+                System.out.print(iterator.next());
+                break;
+            }
+            System.out.print(iterator.next()+"->");
         }
     }
 
