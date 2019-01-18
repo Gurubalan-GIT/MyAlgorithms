@@ -16,7 +16,7 @@ public class Main {
         }
         Iterator<Integer> integerIterator = linkedList.iterator();
         Iterator<Integer> integerIterator1 = linkedList.iterator();
-        System.out.println("Printing Linked List - First add.");
+        System.out.println("Printing Linked Lists (Adding first)");
         while(integerIterator.hasNext()){
             if(integerIterator1.next()==(linkedList.getLast())){
                 System.out.println(integerIterator.next());
@@ -30,11 +30,17 @@ public class Main {
         Iterator iterator1 = linkedList.descendingIterator();
         while(iterator.hasNext()){
             if(iterator1.next()==linkedList.getFirst()){
-                System.out.print(iterator.next());
+                System.out.println(iterator.next());
                 break;
             }
             System.out.print(iterator.next()+"->");
         }
+        //Deletion of first element
+        linkedList.poll();
+        System.out.println(linkedList);
+
+        //Most advanced approach for printing a Linked list / Any list.
+        linkedList.forEach(System.out :: print);
     }
 
 }
