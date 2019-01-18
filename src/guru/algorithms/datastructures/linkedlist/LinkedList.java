@@ -27,7 +27,7 @@ public class LinkedList {
     }
 
     public void delete(int data){
-
+        
     }
 
     public void show(){
