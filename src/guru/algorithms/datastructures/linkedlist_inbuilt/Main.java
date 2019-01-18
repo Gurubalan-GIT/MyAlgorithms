@@ -41,6 +41,14 @@ public class Main {
 
         //Most advanced approach for printing a Linked list / Any list.
         linkedList.forEach(System.out :: print);
+
+        System.out.println("");
+
+        //Usual way - for index searched ways.
+        for(int i=0;i<linkedList.size();i++){
+            System.out.print(linkedList.get(i));
+        }
+
     }
 
 }
