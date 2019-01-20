@@ -10,8 +10,8 @@ public class Main {
         int nodes;
         System.out.println("Enter how many nodes you want to add.");
         nodes=scanner.nextInt();
-        System.out.println("Enter the data:");
         System.out.println("Adding to the last -");
+        System.out.println("Enter the data:");
         for(int i=1;i<=nodes;i++)
         {
             int data = scanner.nextInt();
