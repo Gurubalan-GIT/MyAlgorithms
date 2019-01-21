@@ -15,5 +15,13 @@ public class SLLRightSide {
             na--;
         }
         System.out.println(linkedList);
+        for(int i=0;i<linkedList.size();i++){
+            for(int j=i+1;j<linkedList.size();j++) {
+                if(linkedList.get(i)<linkedList.get(j)){
+                    linkedList.remove(i);
+                }
+            }
+        }
+        System.out.println(linkedList);
     }
 }
