@@ -26,8 +26,12 @@ public class LinkedList {
             head=node;
     }
 
-    public void delete(int data){
-        
+    public void deleteLast(){
+        Node traversal = head;
+        while(traversal.next!=null){
+            traversal=traversal.next;
+        }
+        traversal.next=null;
     }
 
     public void show(){
