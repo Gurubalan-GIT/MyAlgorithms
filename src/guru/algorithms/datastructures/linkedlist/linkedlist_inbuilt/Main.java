@@ -1,7 +1,6 @@
-package guru.algorithms.datastructures.linkedlist_inbuilt;
+package guru.algorithms.datastructures.linkedlist.linkedlist_inbuilt;
 
 import java.util.*;
-import java.io.*;
 
 public class Main {
     public static void main(String[] args){

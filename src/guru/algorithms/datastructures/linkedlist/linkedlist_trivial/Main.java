@@ -1,4 +1,4 @@
-package guru.algorithms.datastructures.linkedlist;
+package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 
 import java.util.Scanner;
 
