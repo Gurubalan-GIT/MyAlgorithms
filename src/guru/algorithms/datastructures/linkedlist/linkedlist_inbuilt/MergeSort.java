@@ -29,5 +29,17 @@ public class MergeSort {
         //Now appending A and B
         linkedList1.addAll(linkedList);
         System.out.println(linkedList1);
+        //Sorting the appended list
+        int temp;
+        for(int i=0;i<linkedList1.size();i++){
+            for(int j=i+1;j<linkedList1.size();j++) {
+                if (linkedList1.get(i) > linkedList1.get(j)) {
+                    temp=linkedList1.get(i);
+                    linkedList1.set(i,linkedList1.get(j));
+                    linkedList1.set(j,temp);
+                }
+            }
+        }
+        System.out.println(linkedList1);
     }
 }
