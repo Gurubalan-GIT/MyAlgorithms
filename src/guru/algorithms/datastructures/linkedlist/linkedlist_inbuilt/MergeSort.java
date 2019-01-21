@@ -1,36 +1,37 @@
 package guru.algorithms.datastructures.linkedlist.linkedlist_inbuilt;
 
-
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class MergeSort {
     public static void main(String[] args){
-        LinkedList<Integer> linkedList=new LinkedList<>();
         //List A
+        LinkedList<Integer> linkedList=new LinkedList<>();
         Scanner scanner=new Scanner(System.in);
-        int na,data;
+        int na,data,temp;
+        System.out.println("Enter number of nodes of list A -");
         na=scanner.nextInt();
+        System.out.println("Enter the values -");
         while(na!=0){
             data=scanner.nextInt();
             linkedList.addLast(data);
             na--;
         }
-        System.out.println(linkedList);
-        LinkedList<Integer> linkedList1 =new LinkedList<>();
         //List B
+        LinkedList<Integer> linkedList1 =new LinkedList<>();
+        System.out.println("Enter number of nodes of list B -");
         int nb=scanner.nextInt();
+        System.out.println("Enter the values ");
         while (nb!=0){
             data=scanner.nextInt();
             linkedList1.addLast(data);
             nb--;
         }
-        System.out.println(linkedList1);
         //Now appending A and B
         linkedList1.addAll(linkedList);
+        System.out.println("Before sorting - Merged list -");
         System.out.println(linkedList1);
         //Sorting the appended list
-        int temp;
         for(int i=0;i<linkedList1.size();i++){
             for(int j=i+1;j<linkedList1.size();j++) {
                 if (linkedList1.get(i) > linkedList1.get(j)) {
@@ -40,6 +41,7 @@ public class MergeSort {
                 }
             }
         }
+        System.out.println("After Sorting -");
         System.out.println(linkedList1);
     }
 }
