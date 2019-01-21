@@ -2,7 +2,7 @@ package guru.algorithms.datastructures.linkedlist.linkedlist_inbuilt;
 
 import java.util.LinkedList;
 import java.util.Scanner;
-
+//Problem Statement : Print the linked list where all the nodes are greater than it's previous ones.
 public class SLLRightSide {
     public static void main(String[] args){
         Scanner scanner=new Scanner(System.in);
