@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class BalancedBraces {
-    public static final Scanner sc=new Scanner(System.in);
+    private static final Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
         String parenthesesString = sc.nextLine();
         System.out.println(checkBalancedParentheses(parenthesesString));
