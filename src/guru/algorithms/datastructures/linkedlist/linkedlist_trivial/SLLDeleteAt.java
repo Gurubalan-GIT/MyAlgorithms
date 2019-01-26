@@ -7,11 +7,7 @@ public class SLLDeleteAt {
         System.out.println("Enter number of nodes-");
         nodes=LinkedList.scanner.nextInt();
         System.out.println("Enter data:");
-        for(int i=1;i<=nodes;i++)
-        {
-            int data = LinkedList.scanner.nextInt();
-            linkedList.addLast(data);
-        }
+        linkedList.addMultipleLast(nodes);
         System.out.println("Enter index to be deleted-");
         index=LinkedList.scanner.nextInt();
         System.out.println("Before deletion-");

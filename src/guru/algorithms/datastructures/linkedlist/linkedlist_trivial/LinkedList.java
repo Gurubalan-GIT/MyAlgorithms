@@ -5,6 +5,23 @@ import java.util.Scanner;
 class LinkedList {
     private Node head;
     static Scanner scanner=new Scanner(System.in);
+
+    void addMultipleFirst(int nodes){
+        for(int i=1;i<=nodes;i++)
+        {
+            int data = scanner.nextInt();
+            addFirst(data);
+        }
+    }
+
+    void addMultipleLast(int nodes){
+        for(int i=1;i<=nodes;i++)
+        {
+            int data = scanner.nextInt();
+            addLast(data);
+        }
+    }
+
     void addLast(int data){
         Node node=new Node(data);
         //This step need not be done, default is null.
