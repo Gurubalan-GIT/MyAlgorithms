@@ -46,6 +46,11 @@ package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
         traversalNode.next=null;
     }
 
+    void deleteFirst(){
+        Node node=head;
+        head=node.next;
+    }
+
     void show(){
         Node currentNode=head;
         while(currentNode!=null){

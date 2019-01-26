@@ -18,6 +18,7 @@ public class Main {
             linkedList.addLast(data);
         }
         linkedList.addAt(nodes-1,33);
+        linkedList.deleteFirst();
         linkedList.show();
         System.out.println("\nAdding to the First -");
         System.out.println("Enter the data:");
