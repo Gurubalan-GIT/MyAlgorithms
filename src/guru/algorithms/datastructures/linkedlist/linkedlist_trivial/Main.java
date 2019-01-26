@@ -18,6 +18,7 @@ public class Main {
             linkedList.addLast(data);
         }
         linkedList.addAt(nodes-1,33);
+        linkedList.deleteAt(nodes-1);
         linkedList.deleteFirst();
         linkedList.show();
         System.out.println("\nAdding to the First -");
@@ -27,6 +28,7 @@ public class Main {
             int data = scanner.nextInt();
             linkedList1.addFirst(data);
         }
+        linkedList1.deleteAt(2);
         linkedList1.deleteLast();
         linkedList1.show();
     }

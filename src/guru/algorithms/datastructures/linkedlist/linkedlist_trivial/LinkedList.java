@@ -23,13 +23,16 @@ package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
     void addAt(int index, int data){
         Node node = new Node(data);
         node.next=null;
-        Node traversal = head;
-        for(int i=0;i<index-1;i++){
-             traversal=traversal.next;
+        if(index==0){
+            addFirst(data);
+        }else {
+            Node traversal = head;
+            for (int i = 0; i < index - 1; i++) {
+                traversal = traversal.next;
+            }
+            node.next = traversal.next;
+            traversal.next = node;
         }
-        node.next=traversal.next;
-        traversal.next=node;
-
     }
 
     void addFirst(int data){
@@ -47,8 +50,21 @@ package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
     }
 
     void deleteFirst(){
-        Node node=head;
-        head=node.next;
+        head=head.next;
+    }
+
+    void deleteAt(int index){
+        if(index==0){
+            head=head.next;
+        }else {
+            Node node = head;
+            Node tempNode;
+            for (int i = 0; i < index - 1; i++) {
+                node = node.next;
+            }
+            tempNode=node.next;
+            node.next=tempNode.next;
+        }
     }
 
     void show(){
