@@ -7,11 +7,8 @@ public class SLLDeleteLast {
         System.out.println("Enter number of nodes-");
         nodes=LinkedList.scanner.nextInt();
         System.out.println("Enter the values:");
-        for(int i=1;i<=nodes;i++)
-        {
-            int data = LinkedList.scanner.nextInt();
-            linkedList.addLast(data);
-        }
+        linkedList.addMultipleLast(nodes);
+        linkedList.deleteLast();
         linkedList.show();
     }
 }
