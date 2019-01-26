@@ -1,9 +1,9 @@
 package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 
-public class LinkedList {
+class LinkedList {
     private Node head;
 
-    public void addLast(int data){
+    void addLast(int data){
         Node node=new Node(data);
         //This step need not be done, default is null.
         node.next=null;
@@ -20,21 +20,13 @@ public class LinkedList {
         }
     }
 
-    public void addFirst(int data){
+    void addFirst(int data){
         Node node=new Node(data);
             node.next = head;
             head=node;
     }
 
-    public void deleteLast(){
-        Node traversal = head;
-        while(traversal.next!=null){
-            traversal=traversal.next;
-        }
-        traversal.next=null;
-    }
-
-    public void show(){
+    void show(){
         Node currentNode=head;
         while(currentNode!=null){
             System.out.print("-->"+currentNode.getData());

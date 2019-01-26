@@ -1,14 +1,14 @@
 package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 
-public class Node {
-    int data;
+class Node {
+    private int data;
     Node next;
 
-    public Node(int data) {
+    Node(int data) {
         this.data = data;
     }
 
-    public int getData() {
+    int getData() {
         return data;
     }
 }

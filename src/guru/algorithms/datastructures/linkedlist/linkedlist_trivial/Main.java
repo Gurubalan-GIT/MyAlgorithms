@@ -3,7 +3,7 @@ package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 import java.util.Scanner;
 
 public class Main {
-    public static Scanner scanner=new Scanner(System.in);
+    private static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args){
         LinkedList linkedList=new LinkedList();
         LinkedList linkedList1 = new LinkedList();
@@ -19,12 +19,12 @@ public class Main {
         }
         linkedList.show();
         System.out.println("\nAdding to the First -");
+        System.out.println("Enter the data:");
         for(int i=1;i<=nodes;i++)
         {
             int data = scanner.nextInt();
             linkedList1.addFirst(data);
         }
-        linkedList1.deleteLast();
         linkedList1.show();
     }
 }
