@@ -3,7 +3,7 @@ package guru.algorithms.datastructures.stacks.stacks_inbuilt;
 import java.util.*;
 import java.util.Stack;
 
-public class StackMain {
+public class StackPush {
     public static void main(String[] args){
         Stack <Integer> stack = new Stack<>();
         int n,data;
