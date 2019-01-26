@@ -1,6 +1,6 @@
 package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 
-class LinkedList {
+ class LinkedList {
     private Node head;
 
     void addLast(int data){
@@ -38,11 +38,29 @@ class LinkedList {
             head=node;
     }
 
+    void deleteLast(){
+        Node traversalNode=head;
+        for(int i=0;i<size()-2;i++){
+            traversalNode=traversalNode.next;
+        }
+        traversalNode.next=null;
+    }
+
     void show(){
         Node currentNode=head;
         while(currentNode!=null){
             System.out.print("-->"+currentNode.getData());
             currentNode=currentNode.next;
         }
+    }
+
+    int size(){
+        int size=0;
+        Node traverse=head;
+        while(traverse!=null){
+            traverse=traverse.next;
+            size++;
+        }
+        return size;
     }
 }

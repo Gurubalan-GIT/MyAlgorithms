@@ -26,6 +26,7 @@ public class Main {
             int data = scanner.nextInt();
             linkedList1.addFirst(data);
         }
+        linkedList1.deleteLast();
         linkedList1.show();
     }
 }
