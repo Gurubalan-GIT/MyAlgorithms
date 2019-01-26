@@ -20,6 +20,18 @@ class LinkedList {
         }
     }
 
+    void addAt(int index, int data){
+        Node node = new Node(data);
+        node.next=null;
+        Node traversal = head;
+        for(int i=0;i<index-1;i++){
+             traversal=traversal.next;
+        }
+        node.next=traversal.next;
+        traversal.next=node;
+
+    }
+
     void addFirst(int data){
         Node node=new Node(data);
             node.next = head;

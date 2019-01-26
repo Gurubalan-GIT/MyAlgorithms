@@ -17,6 +17,7 @@ public class Main {
             int data = scanner.nextInt();
             linkedList.addLast(data);
         }
+        linkedList.addAt(nodes-1,33);
         linkedList.show();
         System.out.println("\nAdding to the First -");
         System.out.println("Enter the data:");
