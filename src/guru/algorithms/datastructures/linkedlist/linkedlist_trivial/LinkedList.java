@@ -22,7 +22,7 @@ class LinkedList {
         }
     }
 
-    void addLast(int data){
+    private void addLast(int data){
         Node node=new Node(data);
         //This step need not be done, default is null.
         node.next=null;
@@ -54,7 +54,7 @@ class LinkedList {
         }
     }
 
-    void addFirst(int data){
+    private void addFirst(int data){
         Node node=new Node(data);
             node.next = head;
             head=node;
@@ -104,7 +104,7 @@ class LinkedList {
         }
     }
 
-    int size(){
+    private int size(){
         int size=0;
         Node traverse=head;
         while(traverse!=null){
