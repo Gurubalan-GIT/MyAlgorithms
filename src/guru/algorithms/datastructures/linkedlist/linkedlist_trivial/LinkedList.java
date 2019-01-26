@@ -1,8 +1,10 @@
 package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 
- class LinkedList {
-    private Node head;
+import java.util.Scanner;
 
+class LinkedList {
+    private Node head;
+    static Scanner scanner=new Scanner(System.in);
     void addLast(int data){
         Node node=new Node(data);
         //This step need not be done, default is null.
@@ -68,10 +70,20 @@ package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
     }
 
     void show(){
-        Node currentNode=head;
+        Node currentNode=head,traverse=head;
+        int lastNode=0;
         while(currentNode!=null){
-            System.out.print("-->"+currentNode.getData());
+            lastNode=currentNode.getData();
             currentNode=currentNode.next;
+        }
+        while(traverse!=null){
+            if(lastNode==traverse.getData()){
+                System.out.println(traverse.getData());
+                break;
+            }else{
+                System.out.print(traverse.getData()+"->");
+                traverse=traverse.next;
+            }
         }
     }
 
