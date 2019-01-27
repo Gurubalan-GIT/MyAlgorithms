@@ -1,7 +1,9 @@
 package guru.algorithms.datastructures.linkedlist.linkedlist_trivial;
 
 import java.util.Scanner;
-
+/**
+ * @author Gurbalan-GIT
+ */
 class LinkedList {
     private Node head;
     static Scanner scanner=new Scanner(System.in);
