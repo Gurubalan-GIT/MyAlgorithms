@@ -38,14 +38,6 @@ public class ObjectQueue {
         }
     }
 
-    /*void enqueueAll(){
-        while(size!=0){
-            ObjectQueueModel element=scanner.nextInt();
-            enqueue(element);
-            size--;
-        }
-    }*/
-
     ObjectQueueModel dequeue(){
         ObjectQueueModel item=queue[front];
         total--;

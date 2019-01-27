@@ -26,6 +26,7 @@ public class Queue {
         queue=new int[this.size];
     }
 
+    @SuppressWarnings("Duplicates")
     boolean enqueue(int element){
         if(!isFull()){
             total++;

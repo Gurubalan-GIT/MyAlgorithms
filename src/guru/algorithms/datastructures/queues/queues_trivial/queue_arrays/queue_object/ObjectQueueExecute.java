@@ -7,9 +7,15 @@ public class ObjectQueueExecute {
         size=ObjectQueue.scanner.nextInt();
         ObjectQueue objectQueue=new ObjectQueue(size);
         System.out.println("Enter the name and the Register number- ");
-        ObjectQueueModel objectQueueModel=new ObjectQueueModel("reeg",243);
-        objectQueue.enqueue(objectQueueModel);
-        objectQueue.enqueue(objectQueueModel);
+        while(size!=0){
+            if(!objectQueue.isFull()) {
+                String name = ObjectQueue.scanner.next();
+                int registerNumber = ObjectQueue.scanner.nextInt();
+                ObjectQueueModel objectQueueModel = new ObjectQueueModel(name, registerNumber);
+                objectQueue.enqueue(objectQueueModel);
+                size--;
+            }
+        }
         objectQueue.show();
     }
 }
