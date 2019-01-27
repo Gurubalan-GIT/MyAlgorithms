@@ -1,4 +1,4 @@
-package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_primitive;
+package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_arrays.stacks_primitive;
 
 public class StackPushAndPop {
     public static void main(String[] args){

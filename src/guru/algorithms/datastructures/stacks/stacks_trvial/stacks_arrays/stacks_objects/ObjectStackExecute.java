@@ -1,4 +1,4 @@
-package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_objects;
+package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_arrays.stacks_objects;
 
 public class ObjectStackExecute {
     public static void main(String[] args){

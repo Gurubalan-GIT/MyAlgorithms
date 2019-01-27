@@ -1,26 +1,26 @@
-package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_objects;
+package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_arrays.stacks_primitive;
 
 import java.util.Scanner;
 
-class ObjectStack {
-    private ObjectStackModel[] stack;
+public class Stack {
+    private int[] stack;
     private int size;
     private int top;
     static Scanner scanner=new Scanner(System.in);
     //Default constructor
-    ObjectStack() {
+    public Stack() {
         top=-1;
         size=100;
-        stack=new ObjectStackModel[size];
+        stack=new int[size];
     }
     //Parametrized constructor with getter
-    ObjectStack(int size){
+    Stack(int size){
         top=-1;
         this.size=size;
-        stack=new ObjectStackModel[size];
+        stack=new int[size];
     }
 
-    boolean push(ObjectStackModel data){
+    boolean push(int data){
         if(!isFull()){
             top++;
             stack[top]=data;
@@ -33,22 +33,20 @@ class ObjectStack {
     void pushAll(){
         if(!isFull()){
             while(size!=0) {
-                String name=scanner.next();
-                int registerNumber=scanner.nextInt();
-                ObjectStackModel objectStackModel = new ObjectStackModel(name,registerNumber);
-                push(objectStackModel);
+                int data=Stack.scanner.nextInt();
+                push(data);
                 size--;
             }
         }
     }
 
-    ObjectStackModel pop(){
+    int pop(){
         return stack[top--];
     }
 
     void popAll() {
         while(!isEmpty()){
-            System.out.println(pop().toResult());
+            System.out.println(pop());
         }
     }
 
@@ -61,8 +59,8 @@ class ObjectStack {
     }
 
     void show() {
-        for(ObjectStackModel i:stack){
-            System.out.println(i.toResult());
+        for(int i:stack){
+            System.out.println(i);
         }
     }
 }

@@ -1,4 +1,4 @@
-package guru.algorithms.datastructures.queues.queues_trivial;
+package guru.algorithms.datastructures.queues.queues_trivial.queue_arrays;
 
 public class Enqueue {
     public static void main(String[] args){
