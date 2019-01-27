@@ -1,20 +1,15 @@
 package guru.algorithms.datastructures.stacks.stacks_trvial;
 
-import java.util.Scanner;
-
 public class StackPushAndPop {
     public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
-        int size,data;
-        size=scanner.nextInt();
+        int size;
+        System.out.println("Enter the size of the stack-");
+        size=Stack.scanner.nextInt();
         Stack stack = new Stack(size);
-        if(!stack.isFull()){
-            while(size!=0) {
-                data=scanner.nextInt();
-                stack.push(data);
-                size--;
-            }
-        }
-        System.out.println(stack.pop());
+        System.out.println("Enter the values to be pushed-");
+        stack.pushAll(size);
+        stack.show();
+        System.out.println("The elements are popped now and shown-");
+        stack.popAll();
     }
 }
