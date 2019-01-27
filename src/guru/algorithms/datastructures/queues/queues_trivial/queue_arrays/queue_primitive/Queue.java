@@ -1,4 +1,4 @@
-package guru.algorithms.datastructures.queues.queues_trivial.queue_arrays;
+package guru.algorithms.datastructures.queues.queues_trivial.queue_arrays.queue_primitive;
 
 import java.util.Scanner;
 
