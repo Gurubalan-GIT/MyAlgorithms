@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 class BalancedParenthesesAlternative {
-    static boolean is_balanced(String s) {
+    private static boolean is_balanced(String s) {
         Stack<Character> bracketsStack = new Stack<>();
         char[] text = s.toCharArray();
         for (char x : text) {
@@ -47,7 +47,7 @@ class BalancedParenthesesAlternative {
         }
         return bracketsStack.empty();
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
             System.out.println("Enter sequence of brackets: ");
             String s = in.nextLine();
