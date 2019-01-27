@@ -2,9 +2,15 @@ package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_objects;
 
 public class ObjectStackExecute {
     public static void main(String[] args){
-        ObjectStackModel objectStackModel = new ObjectStackModel("Gurubalan",12112);
-        ObjectStack objectStack=new ObjectStack();
-        objectStack.push(objectStackModel);
+        int size;
+        System.out.println("Enter number of entries:");
+        size=ObjectStack.scanner.nextInt();
+        ObjectStack objectStack=new ObjectStack(size);
+        System.out.println("Enter the name and register number-");
+        objectStack.pushAll();
+        System.out.println("Printing the objects-");
+        objectStack.show();
+        System.out.println("Popping them-");
         objectStack.popAll();
     }
 }

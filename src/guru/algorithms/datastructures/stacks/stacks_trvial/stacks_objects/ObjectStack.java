@@ -30,15 +30,17 @@ class ObjectStack {
         }
     }
 
-   /* void pushAll(int size){
+    void pushAll(){
         if(!isFull()){
             while(size!=0) {
-                int data=Stack.scanner.nextInt();
-                push(data);
+                String name=scanner.next();
+                int registerNumber=scanner.nextInt();
+                ObjectStackModel objectStackModel = new ObjectStackModel(name,registerNumber);
+                push(objectStackModel);
                 size--;
             }
         }
-    } */
+    }
 
     ObjectStackModel pop(){
         return stack[top--];
@@ -60,7 +62,7 @@ class ObjectStack {
 
     void show() {
         for(ObjectStackModel i:stack){
-            System.out.println(i);
+            System.out.println(i.toResult());
         }
     }
 }

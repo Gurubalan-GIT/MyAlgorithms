@@ -7,7 +7,7 @@ public class StackPushAndPop {
         size=Stack.scanner.nextInt();
         Stack stack = new Stack(size);
         System.out.println("Enter the values to be pushed-");
-        stack.pushAll(size);
+        stack.pushAll();
         stack.show();
         System.out.println("The elements are popped now and shown-");
         stack.popAll();

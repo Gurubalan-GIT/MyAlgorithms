@@ -30,7 +30,7 @@ public class Stack {
         }
     }
 
-    void pushAll(int size){
+    void pushAll(){
         if(!isFull()){
             while(size!=0) {
                 int data=Stack.scanner.nextInt();
