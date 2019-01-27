@@ -93,6 +93,7 @@ class LinkedList {
             lastNode=currentNode.getData();
             currentNode=currentNode.next;
         }
+        //I'm doing this so I can break when I know the last element and print with the correct pattern.
         while(traverse!=null){
             if(lastNode==traverse.getData()){
                 System.out.println(traverse.getData());
