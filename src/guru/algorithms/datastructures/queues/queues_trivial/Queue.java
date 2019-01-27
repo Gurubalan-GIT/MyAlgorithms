@@ -8,7 +8,7 @@ public class Queue {
     private int rear;
     private int front;
     private int size;
-    private static Scanner scanner=new Scanner(System.in);
+    static Scanner scanner=new Scanner(System.in);
 
     public Queue() {
         total=0;
@@ -37,11 +37,25 @@ public class Queue {
         }
     }
 
+    void enqueueAll(){
+       while(size!=0){
+           int element=scanner.nextInt();
+           enqueue(element);
+           size--;
+       }
+    }
+
     int dequeue(){
         int item=queue[front];
         total--;
         front++;
         return item;
+    }
+
+    void dequeueAll(){
+        while(total!=0){
+            System.out.println(dequeue());
+        }
     }
 
     boolean isFull(){

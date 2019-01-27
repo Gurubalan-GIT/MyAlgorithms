@@ -1,4 +1,4 @@
-package guru.algorithms.datastructures.stacks.stacks_trvial;
+package guru.algorithms.datastructures.stacks.stacks_trvial.stacks_primitive;
 
 import java.util.Scanner;
 
