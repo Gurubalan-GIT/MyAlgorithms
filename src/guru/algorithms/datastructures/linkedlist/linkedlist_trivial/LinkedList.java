@@ -76,7 +76,7 @@ class LinkedList {
 
     void deleteAt(int index){
         if(index==0){
-            head=head.next;
+            deleteFirst();
         }else {
             Node node = head;
             Node tempNode;
