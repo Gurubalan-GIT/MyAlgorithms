@@ -9,5 +9,6 @@ public class Enqueue {
         System.out.println("Enter the elements-");
         queue.enqueueAll();
         queue.dequeueAll();
+        queue.show();
     }
 }

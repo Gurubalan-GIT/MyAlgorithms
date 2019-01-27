@@ -66,4 +66,12 @@ public class Queue {
         return (total==0);
     }
 
+    void show(){
+        if(!isEmpty()) {
+            for (int i : queue) {
+                System.out.println(i);
+            }
+        }
+    }
+
 }
