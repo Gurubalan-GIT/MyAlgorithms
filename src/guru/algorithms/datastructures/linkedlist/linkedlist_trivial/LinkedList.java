@@ -88,6 +88,8 @@ class LinkedList {
         }
     }
 
+    //DeleteItem Must be added
+
     void show(){
         Node currentNode=head,traverse=head;
         int lastNode=0;
