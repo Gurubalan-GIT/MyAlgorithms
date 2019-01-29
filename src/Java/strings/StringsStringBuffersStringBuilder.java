@@ -3,7 +3,7 @@
 
 package Java.strings;
 
-public class String_StringBuffer_StringBuilder {
+public class StringsStringBuffersStringBuilder {
 
 	// Concatenates to String
 

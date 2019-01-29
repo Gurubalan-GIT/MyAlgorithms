@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-public class VowelsinString {
+public class VowelsinAString {
 
 	public static void main(String[] args) {
 		System.out.println("Enter the Word");

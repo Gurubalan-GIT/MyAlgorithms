@@ -6,7 +6,7 @@
 
 package Java.strings;
 import java.util.*;
-class SentenceWordLenAlphaSort
+class SentenceWordLengthAlphaSort
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args)

@@ -4,7 +4,7 @@ package Java.strings;
 
 import java.util.*;
 
-class display_PallindromeNames {
+class PalindromeNames {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String name[] = new String[5];

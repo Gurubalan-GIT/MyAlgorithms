@@ -6,7 +6,7 @@ package Java.strings;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class CountOccurencesEach_charString {
+public class CountEachOccurence {
 
 	public static void main(String[] args) {
 		

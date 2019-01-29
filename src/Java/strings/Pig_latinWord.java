@@ -9,7 +9,7 @@ package Java.strings;
 
 import java.util.*;
 
-class check_PiglatinWord {
+class Pig_latinWord {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String s1, s2, s3, s4;

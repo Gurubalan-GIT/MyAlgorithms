@@ -2,7 +2,7 @@
  */
 package Java.strings;
 import java.util.*;
-class sortNames_SelectionSorting
+class SortNamesSelectionSorting
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args)

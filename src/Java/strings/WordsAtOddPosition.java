@@ -7,7 +7,7 @@
 package Java.strings;
 
 import java.util.*;
-public class print_wordsAtOddPosition
+public class WordsAtOddPosition
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args)

@@ -4,7 +4,7 @@
 
 package Java.strings;
 import java.util.*;
-class print_MaxVowelWord
+class MaxVowelWord
 {
     @SuppressWarnings("Duplicates")
     public static void main(String []args)

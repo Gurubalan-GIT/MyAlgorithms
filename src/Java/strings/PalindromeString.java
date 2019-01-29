@@ -7,7 +7,7 @@ package Java.strings;
 
 import java.util.Scanner;
 
-public class pallindromeString {
+public class PalindromeString {
 
 	public static void main(String[] args) {
 		

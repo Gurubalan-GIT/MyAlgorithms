@@ -5,7 +5,7 @@ package Java.strings;
 
 import java.util.Scanner;
 
-public class length_String {
+public class StringLength {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

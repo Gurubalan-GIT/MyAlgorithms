@@ -2,7 +2,7 @@
  */
 package Java.strings;
 
-public class removeAllwhiteSpaces {
+public class RemoveAllWhiteSpaces {
 
 	public static void main(String[] args) {
 

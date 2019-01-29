@@ -5,7 +5,7 @@
 
 package Java.strings;
 import java.util.*;
-class ReplaceVowel_withNextVowel
+class ReplaceVowelWithNextVowel
 {
 	public static void main(String[] args)
     {

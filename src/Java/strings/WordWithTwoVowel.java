@@ -5,7 +5,7 @@ package Java.strings;
 
 import java.util.*;
 
-class WordWith2Vowel {
+class WordWithTwoVowel {
 	@SuppressWarnings("Duplicates")
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

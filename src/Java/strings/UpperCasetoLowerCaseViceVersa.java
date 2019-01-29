@@ -8,7 +8,7 @@ package Java.strings;
 
 import java.util.*;
 
-class upperCase_toLowerCase_viceVersa {
+class UpperCasetoLowerCaseViceVersa {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int i, len;

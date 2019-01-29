@@ -5,7 +5,7 @@ package Java.strings;
 
 import java.util.Scanner;
 
-public class Swaping_StringwithoutTemp {
+public class SwapingStringWithoutTemp {
 
 	public static void main(String[] args) {
 

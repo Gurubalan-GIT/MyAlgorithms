@@ -2,7 +2,7 @@
  */
 package Java.strings;
 import java.util.*;
-class palindromeWord
+class PalindromeWord
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args)

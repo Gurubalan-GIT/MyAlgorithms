@@ -5,7 +5,7 @@
 
 package Java.strings;
 import java.util.*;
-class doubleLetterSequenceWord
+class DoubleLetterSequenceWord
 {
     public static void main(String[] args)
     {

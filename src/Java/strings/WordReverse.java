@@ -1,25 +1,21 @@
-/* WAP to enter a word and print alphabets in different lines
+/* WAP to enter a word and print it in reverse order
 */
 
 package Java.strings;
 
 import java.util.Scanner;
 
-public class print_AlphabetsInDifferentLines {
+public class WordReverse {
 	@SuppressWarnings("Duplicates")
 	public static void main(String[] args) {
-		
 		System.out.println("Enter the word");
 		Scanner sc =new Scanner(System.in);
 		String str=sc.next();
 		char ch[]=str.toCharArray();
-		for(int i=0;i<ch.length;i++)
+		for(int i=ch.length-1;i>=0;i--)
 		{
-			System.out.println(ch[i]);
+			System.out.print(ch[i]);
 		}
-		
-		sc.close();
-		
 		
 		
 

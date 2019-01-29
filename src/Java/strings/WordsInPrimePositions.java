@@ -4,7 +4,7 @@
  */
 package Java.strings;
 import java.util.*;
-class wordsIn_PrimePositions
+class WordsInPrimePositions
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args)

@@ -5,7 +5,7 @@ package Java.strings;
 
 import java.util.*;
 
-class words_atOddPosition
+class WordsatOddPositionAlternative
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args)

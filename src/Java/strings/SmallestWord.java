@@ -5,7 +5,7 @@
 
 package Java.strings;
 import java.util.*;
-class smallestWord
+class SmallestWord
 {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args) {
