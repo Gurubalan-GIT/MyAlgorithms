@@ -1,4 +1,4 @@
-package Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_primitive;
+package Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_primitive.sll;
 
 import java.util.Scanner;
 /**
