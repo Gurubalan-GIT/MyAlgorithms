@@ -1,10 +1,10 @@
 package Java.datastructures.queues.queues_trivial.queue_arrays.queue_object;
 
-public class ObjectQueueModel {
+ class ObjectQueueModel {
     private String name;
     private int registerNumber;
 
-    public ObjectQueueModel(String name, int registerNumber) {
+     ObjectQueueModel(String name, int registerNumber) {
         this.name = name;
         this.registerNumber = registerNumber;
     }
