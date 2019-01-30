@@ -51,15 +51,18 @@ class DoublyLinkedList {
     void addAt(int index, int data){
         Node node = new Node(data);
         node.next=null;
+        node.prev=null;
         if(index==0){
             addFirst(data);
         }else {
             Node traversal = head;
-            for (int i = 0; i < index - 1; i++) {
+            for (int i = 0; i < index; i++) {
                 traversal = traversal.next;
             }
-            node.next = traversal.next;
-            traversal.next = node;
+            traversal.prev.next=node;
+            node.prev=traversal.prev;
+            node.next=traversal;
+            traversal.prev=node;
         }
         size++;
     }
