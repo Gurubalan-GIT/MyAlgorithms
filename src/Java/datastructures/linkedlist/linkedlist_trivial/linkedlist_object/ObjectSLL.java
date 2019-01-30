@@ -2,7 +2,7 @@ package Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_object;
 
 import java.util.Scanner;
 @SuppressWarnings("Duplicates")
-public class ObjectSLL {
+ class ObjectSLL {
     private Node head;
     private int size;
     static Scanner scanner=new Scanner(System.in);

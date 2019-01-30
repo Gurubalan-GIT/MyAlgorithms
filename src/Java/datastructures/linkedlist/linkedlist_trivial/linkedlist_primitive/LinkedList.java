@@ -4,6 +4,7 @@ import java.util.Scanner;
 /**
  * @author Gurbalan-GIT
  */
+@SuppressWarnings("Duplicates")
 class LinkedList {
     private Node head;
     private int size;
