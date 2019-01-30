@@ -2,7 +2,7 @@ package Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_primitive.d
 
 import static Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_primitive.dll.DoublyLinkedList.scanner;
 
-public class DLLInsertFirst {
+public class DLLInsertLast {
     @SuppressWarnings("Duplicates")
     public static void main(String[] args){
         DoublyLinkedList doublyLinkedList=new DoublyLinkedList();
@@ -10,7 +10,7 @@ public class DLLInsertFirst {
         System.out.println("Enter number of nodes-");
         nodes=scanner.nextInt();
         System.out.println("Enter the values- ");
-        doublyLinkedList.addMultipleFirst(nodes);
+        doublyLinkedList.addMultipleLast(nodes);
         doublyLinkedList.show();
     }
 }

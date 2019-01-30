@@ -32,8 +32,9 @@ class DoublyLinkedList {
         Node node=new Node(data);
         //This step need not be done, default is null.
         node.next=null;
-        //Checking if the head is null, if it is node we have to traverse till the last node (until null) and then add it.
+        //Checking if the head is null, if it is not we have to traverse till the last node (until null) and then add it.
         if(head==null){
+            node.prev=null;
             head=node;
         }
         else{
@@ -42,6 +43,7 @@ class DoublyLinkedList {
                 traversalNode=traversalNode.next;
             }
             traversalNode.next=node;
+            node.prev=traversalNode;
         }
         size++;
     }
@@ -62,7 +64,7 @@ class DoublyLinkedList {
         size++;
     }
 
-     void addFirst(int data){
+    private void addFirst(int data){
         Node node=new Node(data);
         node.next = head;
         node.prev=null;
