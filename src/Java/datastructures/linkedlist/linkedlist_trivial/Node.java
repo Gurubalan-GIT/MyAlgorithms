@@ -1,7 +1,7 @@
 package Java.datastructures.linkedlist.linkedlist_trivial;
 
 class Node {
-    private int data;
+    int data;
     Node next;
 
     Node(int data) {
