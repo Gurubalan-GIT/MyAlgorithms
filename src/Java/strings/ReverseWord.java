@@ -3,7 +3,7 @@
  */
 package Java.strings;
 import java.util.*;
-class ReverseWord
+class RevWord
 {
     public static void main(String[] args)
     {
