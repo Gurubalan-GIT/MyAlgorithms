@@ -1,4 +1,4 @@
-package Java.datastructures.linkedlist.linkedlist_trivial;
+package Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_primitive;
 
 public class SLLInsertAt {
     public static void main(String[] args){
