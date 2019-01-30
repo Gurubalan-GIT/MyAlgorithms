@@ -1,6 +1,6 @@
 package Java.datastructures.linkedlist.linkedlist_trivial;
 
-public class DeleteItem {
+public class SLLDeleteItem {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         int nodes, item;
