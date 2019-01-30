@@ -87,12 +87,27 @@ class LinkedList {
             node.next=tempNode.next;
         }
     }
-
-    //DeleteItem Must be added
     /*
      *@param Item
      *
      */
+    void deleteItem(int data){
+        if(head.getData()==data){
+            deleteFirst();
+        }else{
+            Node node=head;
+            Node tempNode=head;
+            while(node!=null){
+                if(node.getData()==data){
+                    tempNode.next=node.next;
+                    node=tempNode.next;
+                }else{
+                    tempNode=node;
+                    node=node.next;
+                }
+            }
+        }
+    }
 
     void show(){
         Node currentNode=head,traverse=head;
