@@ -2,10 +2,10 @@ package Java.datastructures.linkedlist.linkedlist_trivial.linkedlist_primitive.d
 
 import java.util.Scanner;
 @SuppressWarnings("Duplicates")
-public class DoublyLinkedList {
+class DoublyLinkedList {
     private Node head;
     private int size;
-    private static Scanner scanner=new Scanner(System.in);
+    static Scanner scanner=new Scanner(System.in);
 
     DoublyLinkedList(){
         this.size=0;
