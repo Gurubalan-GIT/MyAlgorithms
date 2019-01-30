@@ -62,9 +62,13 @@ public class DoublyLinkedList {
         size++;
     }
 
-    private void addFirst(int data){
+     void addFirst(int data){
         Node node=new Node(data);
         node.next = head;
+        node.prev=null;
+        if(head!=null){
+            head.prev=node;
+        }
         head=node;
         size++;
     }
