@@ -1,50 +1,14 @@
 package Java.datastructures.trees.trees_trivial;
 
+import java.util.Scanner;
+
 public class BST {
     private Node root;
     private int size;
+    static Scanner scanner=new Scanner(System.in);
     BST(){
         root=null;
     }
-/*
-    void insert(int data){
-        Node node=new Node(data);
-        if(root==null){
-            root=node;
-        }
-        Node parentNode=root;
-        Node childNode=root;
-        while (childNode!=null){
-            parentNode=childNode;
-            if(data<childNode.data){
-                childNode=childNode.left;
-            }else{
-                childNode=childNode.right;
-            }
-        }
-        if(data<parentNode.data){
-            parentNode.left=node;
-        }else{
-            parentNode.right=node;
-        }
-    }
-
-    Node findNode(int data){
-        Node child=root;
-        while(child!=null){
-            if(data==child.data){
-                break;
-            }else{
-                if(data<child.data){
-                    child=child.left;
-                }else{
-                    child=child.right;
-                }
-            }
-        }
-        return child;
-    }
-*/
 
     public Node find(int key) {
         Node current = root;
@@ -64,7 +28,14 @@ public class BST {
         return null;
     }
 
-    public void put(int value){
+    void insertAll(int nodes){
+        for(int i=1;i<=nodes;i++){
+            int data = scanner.nextInt();
+            insert(data);
+        }
+    }
+
+    void insert(int value){
         Node newNode = new Node(value);
         if(root == null)
             root = newNode;
@@ -76,21 +47,18 @@ public class BST {
             if(value < parent.data){
                 parent.left = newNode;
                 parent.left.parent = parent;
-                return;
             }
             else{
                 parent.right = newNode;
                 parent.right.parent = parent;
-                return;
             }
         }
     }
 
-
     void show(Node node){
         if(node!=null){
-            show(node.left);
             System.out.println(node.data);
+            show(node.left);
             show(node.right);
         }
     }
