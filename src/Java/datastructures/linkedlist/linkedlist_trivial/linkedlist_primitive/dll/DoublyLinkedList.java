@@ -104,27 +104,24 @@ class DoublyLinkedList {
             }
             node.prev.next=node.next;
             node.next.prev=node.prev;
-            //
-            //tempNode=node.next;
-           // node.next=tempNode.next;
         }
     }
     /*
      *@param Item
      *
      */
+
+    //Issue #1
     void deleteItem(int data){
         if(head.getData()==data){
             deleteFirst();
         }else{
             Node node=head;
-            Node tempNode=head;
             while(node!=null){
                 if(node.getData()==data){
-                    tempNode.next=node.next;
-                    node=tempNode.next;
+                    node.prev.next = node.next;
+                    node.next.prev = node.prev;
                 }else{
-                    tempNode=node;
                     node=node.next;
                 }
             }
