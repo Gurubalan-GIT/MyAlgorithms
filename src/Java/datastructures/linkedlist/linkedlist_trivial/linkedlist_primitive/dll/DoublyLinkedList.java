@@ -86,8 +86,11 @@ class DoublyLinkedList {
         traversalNode.prev.next=null;
     }
 
-    private void deleteFirst(){
-        head=head.next;
+     void deleteFirst(){
+        if(size>1) {
+            head = head.next;
+            head.prev = null;
+        }
     }
 
     void deleteAt(int index){
@@ -96,11 +99,14 @@ class DoublyLinkedList {
         }else {
             Node node = head;
             Node tempNode;
-            for (int i = 0; i < index - 1; i++) {
+            for (int i = 0; i < index; i++) {
                 node = node.next;
             }
-            tempNode=node.next;
-            node.next=tempNode.next;
+            node.prev.next=node.next;
+            node.next.prev=node.prev;
+            //
+            //tempNode=node.next;
+           // node.next=tempNode.next;
         }
     }
     /*
