@@ -80,13 +80,13 @@ class DoublyLinkedList {
 
     void deleteLast(){
         Node traversalNode=head;
-        for(int i=0;i<size-2;i++){
+        for(int i=0;i<size-1;i++){
             traversalNode=traversalNode.next;
         }
-        traversalNode.next=null;
+        traversalNode.prev.next=null;
     }
 
-    void deleteFirst(){
+    private void deleteFirst(){
         head=head.next;
     }
 
