@@ -156,6 +156,18 @@ class LinkedList {
         }
     }
 
+    boolean search(int item){
+        Node node=head;
+        while(node!=null){
+            if(node.getData()==item){
+                return true;
+            }else {
+                node = node.next;
+            }
+        }
+        return false;
+    }
+
     int size(){
         return size;
     }
