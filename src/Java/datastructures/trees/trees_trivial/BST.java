@@ -53,6 +53,7 @@ public class BST {
                 parent.right.parent = parent;
             }
         }
+        size++;
     }
 
     void show(Node node){
